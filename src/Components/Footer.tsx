@@ -62,7 +62,7 @@ export default function Footer() {
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8}>
           <Stack align={"flex-start"}>
             <ListHeader>Company</ListHeader>
             <Link href={"#"}>About Us</Link>
@@ -86,11 +86,11 @@ export default function Footer() {
             <Link href={"#"}>Law Enforcement</Link>
           </Stack>
 
-          <Stack align={"flex-start"}>
+          {/* <Stack align={"flex-start"}>
             <ListHeader>Install App</ListHeader>
             <AppStoreBadge />
             <PlayStoreBadge />
-          </Stack>
+          </Stack> */}
         </SimpleGrid>
       </Container>
 
@@ -108,7 +108,7 @@ export default function Footer() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Text>© 2020 Chakra Templates. All rights reserved</Text>
+          <Text>© 2021 Stake Technologies. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />

@@ -9,6 +9,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import LandingLayout from "../src/Layouts/LandingLayout";
+import Link from "next/link";
 
 function Index() {
   return (
@@ -36,18 +37,26 @@ function Index() {
             when you're done.
           </Text>
           <Stack spacing={6} direction={"row"}>
-            <Button
-              rounded={"full"}
-              px={6}
-              colorScheme={"teal"}
-              bg={"teal.400"}
-              _hover={{ bg: "teal.500" }}
-            >
-              Get started
-            </Button>
-            <Button rounded={"full"} px={6}>
-              Learn more
-            </Button>
+            <Link href="/register">
+              <a>
+                <Button
+                  rounded={"full"}
+                  px={6}
+                  colorScheme={"teal"}
+                  bg={"teal.400"}
+                  _hover={{ bg: "teal.500" }}
+                >
+                  Get started
+                </Button>
+              </a>
+            </Link>
+            <Link href="#">
+              <a>
+                <Button rounded={"full"} px={6}>
+                  Learn more
+                </Button>
+              </a>
+            </Link>
           </Stack>
           <Flex w={"full"} justify="center">
             <img src="/images/productive-lady.jpg" alt="player" />
