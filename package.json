@@ -1,5 +1,5 @@
 {
-  "name": "white-casino-frontend",
+  "name": "stake-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,16 +10,19 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "",
+  "author": "Osinachi Chukwujama",
   "license": "ISC",
   "dependencies": {
     "@chakra-ui/react": "^1.6.6",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "axios": "^0.21.4",
     "framer-motion": "^4.1.17",
+    "js-cookie": "^3.0.1",
     "next": "^11.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1",
     "react-icons": "^4.2.0"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import { Button } from "@chakra-ui/button";
-import { Box, Container, Flex, Heading } from "@chakra-ui/layout";
+import { Box, Container, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
 
@@ -12,7 +12,11 @@ function Navbar(props: Props) {
     <Box shadow="sm">
       <Container maxW="container.xl" py="1rem">
         <Flex align="center" justify="space-between">
-          <Heading>Stake</Heading>
+          <Link href="/">
+            <a>
+              <Image width="150px" src="/images/logo-text.png" />
+            </a>
+          </Link>
 
           <Flex>
             <Link href="/login">
