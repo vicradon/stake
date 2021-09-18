@@ -1,6 +1,6 @@
 import { Flex, Heading, Box, Grid } from "@chakra-ui/layout";
 import React from "react";
-import { RiTaskLine } from "react-icons/ri";
+import { RiFundsLine, RiTaskLine } from "react-icons/ri";
 import { GiSandsOfTime } from "react-icons/gi";
 import SummaryCard from "../src/Components/SummaryCard";
 import DashboardLayout from "../src/Layouts/DashboardLayout";
@@ -36,7 +36,7 @@ function Home(props: Props) {
           title="Total funds staked"
           content={formatAsCurrency(45000)}
         >
-          <RiTaskLine size={50} color="green" />
+          <RiFundsLine size={50} color="orange" />
         </SummaryCard>
       </Grid>
 
