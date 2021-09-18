@@ -1,4 +1,4 @@
-import { Flex, Heading, Box } from "@chakra-ui/layout";
+import { Flex, Heading, Box, Grid } from "@chakra-ui/layout";
 import React from "react";
 import { RiTaskLine } from "react-icons/ri";
 import { GiSandsOfTime } from "react-icons/gi";
@@ -20,7 +20,12 @@ function Home(props: Props) {
         </Heading>
       </Box>
 
-      <Flex mb="2rem" justify="space-between" align="center">
+      <Grid
+        templateColumns="repeat(auto-fit, minmax(300px, 1fr))"
+        gridGap="2rem"
+        justifyItems="center"
+        mb="2rem"
+      >
         <SummaryCard title="Completed Tasks" content="5">
           <RiTaskLine size={50} color="green" />
         </SummaryCard>
@@ -33,7 +38,7 @@ function Home(props: Props) {
         >
           <RiTaskLine size={50} color="green" />
         </SummaryCard>
-      </Flex>
+      </Grid>
 
       <Box mb="2rem">
         <Heading mb="2rem" fontSize="2xl" color="gray">

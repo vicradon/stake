@@ -9,7 +9,9 @@ function Profile(props: Props) {
   return (
     <DashboardLayout>
       <Box as={"section"}>
-        <Heading>Profile</Heading>
+        <Heading fontSize="2xl" color="gray">
+          Profile
+        </Heading>
       </Box>
     </DashboardLayout>
   );
